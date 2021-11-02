@@ -65,7 +65,6 @@ class PostWithCommentsState extends State<PostWithComments> {
             [
               Html(
                 data: _content,
-                blockSpacing: 0.0,
               ),
               Divider(),
               Row(
@@ -126,7 +125,7 @@ class PostWithCommentsState extends State<PostWithComments> {
               padding: EdgeInsets.all(8.0),
               child: Text(
                 'No comments',
-                style: Theme.of(context).textTheme.display1,
+                style: Theme.of(context).textTheme.bodyText1,
               ),
             ),
           );
@@ -151,7 +150,6 @@ class PostWithCommentsState extends State<PostWithComments> {
           children: <Widget>[
             Html(
               data: root.comment.content.rendered,
-              blockSpacing: 0.0,
             ),
             Text(
               root.comment.authorName,
@@ -170,7 +168,6 @@ class PostWithCommentsState extends State<PostWithComments> {
           children: <Widget>[
             Html(
               data: root.comment.content.rendered,
-              blockSpacing: 0.0,
             ),
             Text(
               root.comment.authorName,
